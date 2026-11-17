@@ -1,0 +1,201 @@
+{
+  "nav": {
+    "about": "Giới thiệu",
+    "blog": "Blog",
+    "projects": "Dự án",
+    "lab": "Lab",
+    "now": "Now",
+    "contact": "Liên hệ",
+    "journey": "Hành trình",
+    "home": "Trang chủ",
+    "openMenu": "Mở menu",
+    "closeMenu": "Đóng menu",
+    "skipToContent": "Bỏ qua đến nội dung chính",
+    "mainNavigation": "Điều hướng chính"
+  },
+  "language": {
+    "label": "Ngôn ngữ",
+    "switchTo": "Chuyển sang {language}",
+    "vi": "Tiếng Việt",
+    "en": "English"
+  },
+  "common": {
+    "readMore": "Đọc tiếp",
+    "viewDetails": "Xem chi tiết",
+    "viewAll": "Xem tất cả",
+    "minRead": "{minutes} phút đọc",
+    "publishedOn": "Xuất bản {date}",
+    "updatedOn": "Cập nhật {date}",
+    "lastUpdated": "Cập nhật lần cuối: {date}",
+    "backTo": "Quay lại {page}",
+    "role": "Vai trò",
+    "stack": "Công nghệ",
+    "status": "Trạng thái",
+    "tags": "Tags",
+    "category": "Chuyên mục",
+    "relatedArticles": "Bài viết liên quan",
+    "availableIn": "Bài viết này cũng có bản {language}.",
+    "empty": "Chưa có nội dung. Quay lại sau nhé.",
+    "present": "nay"
+  },
+  "status": {
+    "active": "Đang vận hành",
+    "building": "Đang xây dựng",
+    "experiment": "Thử nghiệm",
+    "archived": "Lưu trữ"
+  },
+  "metadata": {
+    "home": {
+      "title": "Phúc – Building things that matter",
+      "description": "Website cá nhân của Phúc: xây dựng sản phẩm phần mềm, khám phá công nghệ và chia sẻ kiến thức về Software Engineering, System Architecture và AI."
+    },
+    "about": {
+      "title": "Giới thiệu",
+      "description": "Phúc là ai, đang làm gì và quan tâm đến những điều gì trong công nghệ và sản phẩm."
+    },
+    "journey": {
+      "title": "Hành trình",
+      "description": "Hành trình nghề nghiệp của Phúc: từ Software Developer đến Tech Lead và CTO."
+    },
+    "now": {
+      "title": "Now",
+      "description": "Những gì Phúc đang tập trung vào ở thời điểm hiện tại."
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Bài viết về Software Engineering, kiến trúc hệ thống, AI và hành trình xây dựng sản phẩm."
+    },
+    "topic": {
+      "title": "Chuyên mục: {topic}",
+      "description": "Các bài viết thuộc chuyên mục {topic}."
+    },
+    "projects": {
+      "title": "Dự án",
+      "description": "Các sản phẩm, nền tảng và công cụ mà Phúc đã và đang xây dựng."
+    },
+    "lab": {
+      "title": "Lab",
+      "description": "Những thử nghiệm công nghệ: AI Agent, tự động hóa và công cụ cho developer."
+    },
+    "contact": {
+      "title": "Liên hệ",
+      "description": "Kết nối với Phúc để trao đổi ý tưởng, dự án công nghệ và cơ hội hợp tác."
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Software Engineer · Technology Leader · Product Builder",
+      "title": "Xin chào, tôi là Phúc.",
+      "message": "Tôi xây dựng sản phẩm, khám phá công nghệ và chia sẻ hành trình của mình.",
+      "description": "Tôi quan tâm đến Software Engineering, System Architecture, AI và cách biến những ý tưởng thành sản phẩm thực tế.",
+      "ctaProjects": "Khám phá dự án",
+      "ctaBlog": "Đọc Blog"
+    },
+    "about": {
+      "label": "Giới thiệu",
+      "title": "Tôi là Phúc – một người làm công nghệ với niềm đam mê xây dựng sản phẩm.",
+      "cta": "Tìm hiểu thêm về tôi"
+    },
+    "now": {
+      "label": "Now",
+      "title": "Những gì tôi đang tập trung.",
+      "cta": "Xem chi tiết"
+    },
+    "projects": {
+      "label": "Dự án",
+      "title": "Dự án nổi bật",
+      "description": "Một số sản phẩm và nền tảng tôi đã và đang xây dựng.",
+      "cta": "Xem tất cả dự án"
+    },
+    "articles": {
+      "label": "Blog",
+      "title": "Bài viết mới nhất",
+      "description": "Ghi chép về những gì tôi đang xây dựng, những vấn đề gặp phải và cách giải quyết.",
+      "cta": "Xem tất cả bài viết"
+    },
+    "journey": {
+      "label": "Hành trình",
+      "title": "Hành trình nghề nghiệp",
+      "cta": "Xem toàn bộ hành trình"
+    },
+    "connect": {
+      "label": "Kết nối",
+      "title": "Let's build something together.",
+      "description": "Tôi luôn cởi mở với những ý tưởng, dự án công nghệ và cơ hội hợp tác thú vị.",
+      "cta": "Gửi lời nhắn"
+    }
+  },
+  "about": {
+    "title": "Giới thiệu",
+    "lead": "Tôi là Phúc – một người làm công nghệ với niềm đam mê xây dựng sản phẩm.",
+    "interestsTitle": "Những điều tôi quan tâm",
+    "principlesTitle": "Cách tôi làm việc",
+    "journeyCta": "Xem hành trình nghề nghiệp",
+    "contactCta": "Liên hệ với tôi"
+  },
+  "journey": {
+    "title": "Hành trình",
+    "lead": "Những chặng đường đã đi qua — từ viết những dòng code đầu tiên trong vai trò Software Developer đến dẫn dắt đội ngũ và xây dựng sản phẩm.",
+    "note": "Trang này chỉ bao gồm những thông tin được phép công khai. Chi tiết dự án của công ty và khách hàng được lược bỏ có chủ đích."
+  },
+  "now": {
+    "title": "Now",
+    "lead": "Đây là trang \"Now\" — những gì tôi đang tập trung vào ở thời điểm này. Nếu bạn muốn biết tôi đang làm gì, đây là nơi chính xác nhất.",
+    "inspired": "Ý tưởng trang Now lấy cảm hứng từ nownownow.com."
+  },
+  "blog": {
+    "title": "Blog",
+    "lead": "Bài viết về Software Engineering, kiến trúc hệ thống, AI và hành trình xây dựng sản phẩm. Viết từ trải nghiệm thật, không chờ đến khi trở thành chuyên gia.",
+    "topics": "Chuyên mục",
+    "allTopics": "Tất cả",
+    "topicTitle": "Chuyên mục: {topic}",
+    "topicLead": "{count, plural, other {# bài viết}} trong chuyên mục này."
+  },
+  "projects": {
+    "title": "Dự án",
+    "lead": "Các sản phẩm, nền tảng và công cụ tôi đã và đang xây dựng. Với dự án của công ty, tôi chỉ chia sẻ những thông tin được phép công khai và nêu rõ vai trò cá nhân.",
+    "links": "Liên kết",
+    "website": "Website",
+    "repository": "Mã nguồn"
+  },
+  "lab": {
+    "title": "Lab",
+    "lead": "Nơi ghi lại những thử nghiệm công nghệ — có cái thành công, có cái chỉ là bài học. Không phải sản phẩm hoàn chỉnh, mà là quá trình khám phá."
+  },
+  "contact": {
+    "title": "Liên hệ",
+    "lead": "Bạn có ý tưởng, dự án công nghệ hoặc cơ hội hợp tác muốn trao đổi? Gửi lời nhắn cho tôi qua form bên dưới.",
+    "elsewhere": "Hoặc kết nối qua",
+    "form": {
+      "name": "Họ và tên",
+      "email": "Email",
+      "subject": "Chủ đề",
+      "message": "Nội dung",
+      "namePlaceholder": "Tên của bạn",
+      "emailPlaceholder": "ban@example.com",
+      "subjectPlaceholder": "Bạn muốn trao đổi về điều gì?",
+      "messagePlaceholder": "Chia sẻ thêm về ý tưởng hoặc dự án của bạn…",
+      "submit": "Gửi lời nhắn",
+      "submitting": "Đang gửi…",
+      "success": "Cảm ơn bạn! Lời nhắn đã được gửi, tôi sẽ phản hồi sớm nhất có thể.",
+      "error": "Không thể gửi lời nhắn lúc này. Vui lòng thử lại sau.",
+      "rateLimited": "Bạn đã gửi quá nhiều lời nhắn. Vui lòng thử lại sau ít phút.",
+      "unavailable": "Form liên hệ tạm thời chưa hoạt động. Vui lòng liên hệ qua các kênh khác.",
+      "errors": {
+        "nameRequired": "Vui lòng nhập tên (2–100 ký tự).",
+        "emailInvalid": "Email không hợp lệ.",
+        "subjectTooLong": "Chủ đề tối đa 150 ký tự.",
+        "messageLength": "Nội dung cần từ 10 đến 5000 ký tự."
+      }
+    }
+  },
+  "notFound": {
+    "title": "Không tìm thấy trang",
+    "description": "Trang bạn đang tìm không tồn tại hoặc đã được di chuyển.",
+    "cta": "Về trang chủ"
+  },
+  "footer": {
+    "tagline": "Building things that matter.",
+    "copyright": "© {year} Phúc. Bảo lưu mọi quyền."
+  }
+}

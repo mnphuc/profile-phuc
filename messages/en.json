@@ -1,0 +1,201 @@
+{
+  "nav": {
+    "about": "About",
+    "blog": "Blog",
+    "projects": "Projects",
+    "lab": "Lab",
+    "now": "Now",
+    "contact": "Contact",
+    "journey": "Journey",
+    "home": "Home",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to main content",
+    "mainNavigation": "Main navigation"
+  },
+  "language": {
+    "label": "Language",
+    "switchTo": "Switch to {language}",
+    "vi": "Tiếng Việt",
+    "en": "English"
+  },
+  "common": {
+    "readMore": "Read more",
+    "viewDetails": "View details",
+    "viewAll": "View all",
+    "minRead": "{minutes} min read",
+    "publishedOn": "Published {date}",
+    "updatedOn": "Updated {date}",
+    "lastUpdated": "Last updated: {date}",
+    "backTo": "Back to {page}",
+    "role": "Role",
+    "stack": "Stack",
+    "status": "Status",
+    "tags": "Tags",
+    "category": "Topic",
+    "relatedArticles": "Related articles",
+    "availableIn": "This article is also available in {language}.",
+    "empty": "Nothing here yet. Check back soon.",
+    "present": "present"
+  },
+  "status": {
+    "active": "Active",
+    "building": "Building",
+    "experiment": "Experiment",
+    "archived": "Archived"
+  },
+  "metadata": {
+    "home": {
+      "title": "Phuc – Building things that matter",
+      "description": "Personal website of Phuc. Building software products, exploring technology and sharing knowledge on software engineering, system architecture and AI."
+    },
+    "about": {
+      "title": "About",
+      "description": "Who I am, what I'm working on and what I care about in technology and product building."
+    },
+    "journey": {
+      "title": "Journey",
+      "description": "Phuc's career journey: from Software Developer to Tech Lead and CTO."
+    },
+    "now": {
+      "title": "Now",
+      "description": "What Phuc is focused on right now."
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Articles on software engineering, system architecture, AI and the journey of building products."
+    },
+    "topic": {
+      "title": "Topic: {topic}",
+      "description": "Articles in the {topic} topic."
+    },
+    "projects": {
+      "title": "Projects",
+      "description": "Products, platforms and tools Phuc has built and is building."
+    },
+    "lab": {
+      "title": "Lab",
+      "description": "Technology experiments: AI agents, automation and developer tools."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Get in touch with Phuc about ideas, technology projects and collaboration."
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Software Engineer · Technology Leader · Product Builder",
+      "title": "Hi, I'm Phuc.",
+      "message": "I build software products, explore emerging technologies, and share what I learn along the way.",
+      "description": "My interests include software engineering, system architecture, AI, and turning ideas into real-world products.",
+      "ctaProjects": "Explore projects",
+      "ctaBlog": "Read the blog"
+    },
+    "about": {
+      "label": "About",
+      "title": "I'm Phuc – a technologist with a passion for building products.",
+      "cta": "More about me"
+    },
+    "now": {
+      "label": "Now",
+      "title": "What I'm focused on.",
+      "cta": "See details"
+    },
+    "projects": {
+      "label": "Projects",
+      "title": "Featured projects",
+      "description": "A few of the products and platforms I have built and am building.",
+      "cta": "View all projects"
+    },
+    "articles": {
+      "label": "Blog",
+      "title": "Latest articles",
+      "description": "Notes on what I'm building, the problems I run into and how I solve them.",
+      "cta": "View all articles"
+    },
+    "journey": {
+      "label": "Journey",
+      "title": "Career journey",
+      "cta": "See the full journey"
+    },
+    "connect": {
+      "label": "Connect",
+      "title": "Let's build something together.",
+      "description": "I'm always open to interesting ideas, technology projects and collaboration opportunities.",
+      "cta": "Send a message"
+    }
+  },
+  "about": {
+    "title": "About",
+    "lead": "I'm Phuc – a technologist with a passion for building products.",
+    "interestsTitle": "What I care about",
+    "principlesTitle": "How I work",
+    "journeyCta": "See my career journey",
+    "contactCta": "Get in touch"
+  },
+  "journey": {
+    "title": "Journey",
+    "lead": "The road so far — from writing my first lines of code as a Software Developer to leading teams and building products.",
+    "note": "This page only includes information that is cleared for public sharing. Company and client project details are intentionally left out."
+  },
+  "now": {
+    "title": "Now",
+    "lead": "This is my \"Now\" page — what I'm focused on at this point in time. If you want to know what I'm up to, this is the most accurate place.",
+    "inspired": "The Now page idea is inspired by nownownow.com."
+  },
+  "blog": {
+    "title": "Blog",
+    "lead": "Articles on software engineering, system architecture, AI and the journey of building products. Written from real experience, without waiting to become an expert.",
+    "topics": "Topics",
+    "allTopics": "All",
+    "topicTitle": "Topic: {topic}",
+    "topicLead": "{count, plural, one {# article} other {# articles}} in this topic."
+  },
+  "projects": {
+    "title": "Projects",
+    "lead": "Products, platforms and tools I have built and am building. For company projects, I only share what is cleared for public sharing and state my personal role clearly.",
+    "links": "Links",
+    "website": "Website",
+    "repository": "Source code"
+  },
+  "lab": {
+    "title": "Lab",
+    "lead": "A log of technology experiments — some succeed, some are just lessons. Not finished products, but the process of exploring."
+  },
+  "contact": {
+    "title": "Contact",
+    "lead": "Have an idea, a technology project or a collaboration opportunity to discuss? Send me a message using the form below.",
+    "elsewhere": "Or connect via",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "you@example.com",
+      "subjectPlaceholder": "What would you like to talk about?",
+      "messagePlaceholder": "Tell me more about your idea or project…",
+      "submit": "Send message",
+      "submitting": "Sending…",
+      "success": "Thank you! Your message has been sent. I'll get back to you as soon as I can.",
+      "error": "Your message could not be sent right now. Please try again later.",
+      "rateLimited": "Too many messages. Please try again in a few minutes.",
+      "unavailable": "The contact form is temporarily unavailable. Please reach out through other channels.",
+      "errors": {
+        "nameRequired": "Please enter your name (2–100 characters).",
+        "emailInvalid": "Please enter a valid email.",
+        "subjectTooLong": "Subject must be at most 150 characters.",
+        "messageLength": "Message must be between 10 and 5000 characters."
+      }
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "cta": "Back to home"
+  },
+  "footer": {
+    "tagline": "Building things that matter.",
+    "copyright": "© {year} Phuc. All rights reserved."
+  }
+}
