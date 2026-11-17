@@ -26,6 +26,8 @@
     "minRead": "{minutes} phút đọc",
     "publishedOn": "Xuất bản {date}",
     "updatedOn": "Cập nhật {date}",
+    "published": "Xuất bản",
+    "updated": "Cập nhật",
     "lastUpdated": "Cập nhật lần cuối: {date}",
     "backTo": "Quay lại {page}",
     "role": "Vai trò",

@@ -1,0 +1,55 @@
+---
+title: "Xây dựng một Artifact Repository Platform"
+description: "Vì sao cần một nền tảng quản lý và phân phối gói phần mềm, những bài toán cốt lõi cần giải quyết và các nguyên tắc thiết kế tôi đặt ra ngay từ đầu."
+date: "2026-11-03"
+locale: "vi"
+translationKey: "building-artifact-repository-platform"
+category: "Software Architecture"
+tags:
+  - System Architecture
+  - DevOps
+  - Platform
+published: true
+featured: false
+---
+
+Khi số lượng sản phẩm phần mềm tăng lên, câu hỏi "bản build nào đang chạy ở đâu?" trở nên khó trả lời hơn bao giờ hết. Đó là lúc một **Artifact Repository Platform** trở nên cần thiết.
+
+<Callout>
+Bài viết tập trung vào bài toán và nguyên tắc thiết kế. Chi tiết triển khai nội bộ được lược bỏ có chủ đích.
+</Callout>
+
+## Artifact là gì?
+
+Artifact là kết quả của quá trình build: gói cài đặt, container image, thư viện, file nhị phân… Mỗi artifact cần được **định danh**, **lưu trữ**, **phân quyền** và **phân phối** một cách tin cậy.
+
+## Những bài toán cốt lõi
+
+1. **Định danh và phiên bản.** Mỗi artifact phải có phiên bản rõ ràng, không thể bị ghi đè sau khi phát hành.
+2. **Toàn vẹn dữ liệu.** Người dùng cần kiểm chứng được artifact không bị thay đổi — thường bằng checksum và chữ ký số.
+3. **Phân quyền.** Ai được tải lên, ai được tải xuống, và với phạm vi nào.
+4. **Phân phối hiệu quả.** Tải nhanh, ổn định, có thể kết hợp CDN.
+5. **Truy vết.** Biết được artifact được build từ commit nào, khi nào và bởi pipeline nào.
+
+## Nguyên tắc thiết kế
+
+- **Bất biến (immutable):** đã phát hành thì không sửa — muốn thay đổi thì phát hành phiên bản mới.
+- **Tách metadata và nội dung:** metadata trong cơ sở dữ liệu, nội dung trong object storage.
+- **API-first:** mọi thao tác đều qua API để tích hợp dễ dàng với CI/CD.
+- **Bắt đầu đơn giản:** chỉ hỗ trợ những định dạng thực sự cần, mở rộng khi có nhu cầu.
+
+Một ví dụ về metadata tối thiểu cho mỗi artifact:
+
+```json
+{
+  "name": "example-agent",
+  "version": "1.4.2",
+  "checksum": "sha256:…",
+  "source": { "commit": "a1b2c3d", "pipeline": "build-1234" },
+  "publishedAt": "2026-11-03T08:00:00Z"
+}
+```
+
+## Kết luận
+
+Một nền tảng artifact tốt không cần nhiều tính năng, nhưng cần **đáng tin cậy**. Trong các bài tiếp theo, tôi sẽ chia sẻ thêm về cách nền tảng này kết nối với hệ thống quản lý license và hạ tầng phân phối.

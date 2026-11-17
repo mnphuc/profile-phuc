@@ -26,6 +26,8 @@
     "minRead": "{minutes} min read",
     "publishedOn": "Published {date}",
     "updatedOn": "Updated {date}",
+    "published": "Published",
+    "updated": "Updated",
     "lastUpdated": "Last updated: {date}",
     "backTo": "Back to {page}",
     "role": "Role",

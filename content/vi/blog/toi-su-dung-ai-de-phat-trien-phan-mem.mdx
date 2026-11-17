@@ -1,0 +1,58 @@
+---
+title: "Tôi đang sử dụng AI để phát triển phần mềm như thế nào?"
+description: "Chia sẻ cách tôi đưa AI vào quy trình làm phần mềm hằng ngày: từ đọc hiểu codebase, lên kế hoạch, viết code đến review — và những nguyên tắc tôi giữ để AI thực sự hữu ích."
+date: "2026-11-17"
+updatedAt: "2026-11-17"
+locale: "vi"
+translationKey: "ai-assisted-development"
+category: "AI"
+tags:
+  - AI
+  - Claude Code
+  - Software Engineering
+published: true
+featured: true
+---
+
+AI không thay thế việc suy nghĩ của kỹ sư phần mềm. Nhưng nếu dùng đúng cách, nó thay đổi đáng kể **thời gian** và **năng lượng** tôi dành cho từng phần của công việc.
+
+Bài viết này là ghi chép về cách tôi đang dùng AI trong công việc hằng ngày — không phải hướng dẫn chuẩn mực, mà là những gì đang hoạt động với tôi ở thời điểm hiện tại.
+
+## Những công cụ tôi sử dụng
+
+Tôi không chạy theo mọi công cụ mới. Thứ tôi cần là một trợ lý làm việc được **trực tiếp trên codebase**: đọc file, chạy lệnh, chỉnh sửa và kiểm tra kết quả. Vì vậy công cụ chính của tôi hiện tại là **Claude Code** chạy trong terminal, bên cạnh trình soạn thảo quen thuộc.
+
+## AI tham gia vào những bước nào?
+
+### 1. Đọc hiểu codebase
+
+Khi tiếp cận một module lạ, tôi để AI đọc và tóm tắt luồng xử lý chính, các điểm phụ thuộc và những chỗ có rủi ro. Việc này không thay cho việc tự đọc code, nhưng giúp tôi biết **nên đọc chỗ nào trước**.
+
+### 2. Lên kế hoạch trước khi viết code
+
+Với thay đổi lớn, tôi yêu cầu AI đề xuất kế hoạch: file nào cần sửa, thứ tự thực hiện, rủi ro và cách kiểm thử. Tôi review kế hoạch như review thiết kế của một đồng nghiệp — chỉnh sửa, loại bỏ phần thừa rồi mới bắt đầu.
+
+### 3. Viết code theo từng bước nhỏ
+
+Tôi chia việc thành các bước có thể kiểm chứng được. Mỗi bước kết thúc bằng việc chạy type-check, lint hoặc test:
+
+```bash
+npm run lint && npx tsc --noEmit && npm test
+```
+
+Bước nhỏ giúp tôi phát hiện sớm khi AI đi sai hướng, thay vì phải gỡ một thay đổi lớn.
+
+### 4. Review và tìm lỗi
+
+AI là một "người review thứ hai" khá tốt: phát hiện trường hợp biên bị bỏ sót, xử lý lỗi thiếu, hoặc đoạn code có thể đơn giản hơn. Quyết định cuối cùng vẫn là của tôi.
+
+## Những nguyên tắc tôi giữ
+
+- **Ngữ cảnh là tất cả.** Mô tả rõ mục tiêu, ràng buộc và quy ước của dự án. Kết quả tốt đến từ yêu cầu tốt.
+- **Không merge thứ mình không hiểu.** Nếu không giải thích được một đoạn code, tôi chưa sẵn sàng chịu trách nhiệm về nó.
+- **Kiểm chứng bằng công cụ, không bằng cảm giác.** Test, type-check và chạy thử luôn đáng tin hơn một câu trả lời nghe có vẻ hợp lý.
+- **Bảo mật dữ liệu.** Không đưa secret, dữ liệu khách hàng hay thông tin nội bộ nhạy cảm vào prompt.
+
+## Kết luận
+
+AI giúp tôi dành ít thời gian hơn cho phần lặp lại và nhiều thời gian hơn cho phần quan trọng: hiểu vấn đề, thiết kế giải pháp và đảm bảo chất lượng. Tôi sẽ tiếp tục ghi lại những thử nghiệm cụ thể trong mục [Lab](/vi/lab).

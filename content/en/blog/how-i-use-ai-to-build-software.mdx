@@ -1,0 +1,58 @@
+---
+title: "How I use AI to build software"
+description: "How I bring AI into my day-to-day software work: understanding codebases, planning, writing code and reviewing — plus the principles I follow to keep AI genuinely useful."
+date: "2026-11-17"
+updatedAt: "2026-11-17"
+locale: "en"
+translationKey: "ai-assisted-development"
+category: "AI"
+tags:
+  - AI
+  - Claude Code
+  - Software Engineering
+published: true
+featured: true
+---
+
+AI does not replace a software engineer's thinking. But used well, it significantly changes **how much time** and **how much energy** I spend on each part of the job.
+
+This post is a set of notes on how I use AI in my daily work — not a definitive guide, just what is working for me right now.
+
+## The tools I use
+
+I don't chase every new tool. What I need is an assistant that works **directly on the codebase**: reading files, running commands, making edits and checking the results. So my main tool today is **Claude Code** running in the terminal, next to my usual editor.
+
+## Where does AI fit in?
+
+### 1. Understanding a codebase
+
+When I approach an unfamiliar module, I let AI read it and summarise the main flow, the dependencies and the risky spots. It does not replace reading the code myself, but it tells me **where to start reading**.
+
+### 2. Planning before coding
+
+For larger changes, I ask AI to propose a plan: which files to touch, in what order, the risks and how to test. I review the plan the way I would review a colleague's design — trimming and adjusting before any code is written.
+
+### 3. Writing code in small steps
+
+I break the work into verifiable steps. Each step ends with a type-check, lint or test run:
+
+```bash
+npm run lint && npx tsc --noEmit && npm test
+```
+
+Small steps let me catch it early when AI heads in the wrong direction, instead of untangling one big change.
+
+### 4. Review and bug hunting
+
+AI is a decent "second reviewer": it spots missed edge cases, missing error handling or code that could be simpler. The final call is still mine.
+
+## Principles I follow
+
+- **Context is everything.** Describe the goal, the constraints and the project's conventions clearly. Good results come from good requests.
+- **Never merge what you don't understand.** If I can't explain a piece of code, I'm not ready to own it.
+- **Verify with tools, not feelings.** Tests, type-checks and actually running the code beat an answer that merely sounds right.
+- **Protect data.** No secrets, customer data or sensitive internal information in prompts.
+
+## Conclusion
+
+AI lets me spend less time on repetitive work and more time on what matters: understanding the problem, designing the solution and ensuring quality. I'll keep logging concrete experiments in the [Lab](/en/lab).
