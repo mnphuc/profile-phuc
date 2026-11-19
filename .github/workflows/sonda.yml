@@ -1,0 +1,25 @@
+# Scans every push to main and every pull request, and uploads the
+# analysis to sonda, which posts each pull request's result on it.
+# A failing quality gate fails this job: add continue-on-error: true to the
+# scan step to only report it.
+name: sonda
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+jobs:
+  sonda:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # new code is judged against the base branch
+      - name: sonda scan
+        env:
+          SONDA_TOKEN: ${{ secrets.SONDA_TOKEN }}
+          # Through env, not inline: a branch name is untrusted input.
+          BRANCH: ${{ github.head_ref || github.ref_name }}
+        run: >
+          "$HOME/.local/bin/sonda" scan . --upload
+          --server http://localhost:9000 --project profile-phuc
+          --branch "$BRANCH" --commit "$GITHUB_SHA"
